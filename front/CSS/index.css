@@ -1,0 +1,21 @@
+header
+{
+    text-align: center;
+    font-size: 20px;
+    background-color: darkolivegreen;
+    margin-top: 2%;
+    padding: 10px;
+}
+
+body
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#userPanel
+{
+    margin-top: 20px;
+    background-color: gray;
+    padding: 20px;
+}
