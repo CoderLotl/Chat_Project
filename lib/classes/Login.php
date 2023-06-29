@@ -1,22 +1,30 @@
 <?php
+session_start();
+require_once '../services/DataAccess.php';
 
 class Login
 {
     public function LogIn(string $user, string $password)
-    {    
+    {        
         $dataAccess = new DataAccess();
         
-        if($dataAccess->Login($_SESSION['username'], $_SESSION['password']))
+        if($dataAccess->Login($user, $password))
         {
             $_SESSION['username'] = $user;
-            $_SESSION['loggedin'] = true;                
-            header("Location: ../index.php");            
+            $_SESSION['loggedin'] = true;                     
         }
         else
         {
-            $_SESSION['wrongLogIn'] = true;
-            header("Location: ../index.php");
+            $_SESSION['wrongLogIn'] = true;            
         }      
+    }
+
+    public function LogOut()
+    {
+        $dataAccess = new DataAccess();
+               
+        session_unset();
+        session_destroy();
     }
 }
 
