@@ -15,10 +15,10 @@ class UI
                 <label id="lUserNameLogged">'
                     . $_SESSION["username"] .
                 '</label><br>
-                <button type="submit" id="btnLogOut" value="Log Out">
+                <button type="submit" id="btnLogOut">
                     Log Out
                 </button>
-                <input type="hidden" name="type>
+                <input type="hidden" name="type" value="logout">
             </form>';
             echo $code;
         }

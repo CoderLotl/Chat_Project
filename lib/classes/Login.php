@@ -22,9 +22,8 @@ class Login
     public function LogOut()
     {
         $dataAccess = new DataAccess();
-               
-        session_unset();
-        session_destroy();
+
+
     }
 }
 

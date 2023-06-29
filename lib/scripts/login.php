@@ -13,6 +13,9 @@ if ($requestMethod == 'POST')
     elseif ($_POST['type'] == 'logout')
     {
         $login->LogOut();
+        session_unset();
+        session_destroy();
+        
         header("Location: {$__DIR__}/index.php");
     }
 }
