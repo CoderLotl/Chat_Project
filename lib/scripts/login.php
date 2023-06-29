@@ -1,5 +1,5 @@
 <?php
-//session_start();
+require_once '../classes/Login.php';
 
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 if ($requestMethod == 'POST')
