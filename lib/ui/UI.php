@@ -7,7 +7,7 @@ class UI
         if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
         {            
             $code =                    
-            '<form id="panel" action="./lib/scripts/login.php" method="POST">
+            '<form id="panel" action="/lib/scripts/login.php" method="POST">
             <label id="lUserName">Logged User: </label><label id="lUserNameLogged">' . $_SESSION["username"] . '</label>            
             <br><button type="submit" id="btnLogOut" value="Log Out">Log Out</button>
             <input type="hidden" name="type></form>';
@@ -16,7 +16,7 @@ class UI
         else
         {            
             $code =
-            '<form id="panel" action="./lib/scripts/login.php" method="POST">            
+            '<form id="panel" action="/lib/scripts/login.php" method="POST">            
             <label for="lUserName" id="lUserName">Username:</label>            
             <input type="text" id="userName" name="userName" placeholder="User">            
             <label for="lPassword" id="lPassword">Password:</label>            

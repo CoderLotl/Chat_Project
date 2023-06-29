@@ -6,11 +6,11 @@ if ($requestMethod == 'POST')
 {
     if($_POST['type'] == 'login')
     {        
-        $login = new DataAccess();
+        $login = new Login();
     }
     elseif($_POST['type'] == 'logout')
     {
-        header("Location: ../index.php");
+        header("Location: {$__DIR__}/index.php");
         session_unset();
         session_destroy();
     }
