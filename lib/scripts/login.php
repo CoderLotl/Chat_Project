@@ -2,7 +2,8 @@
 require_once '../classes/Login.php';
 
 $requestMethod = $_SERVER["REQUEST_METHOD"];
-if ($requestMethod == 'POST') {
+if ($requestMethod == 'POST')
+{
     $login = new Login();
     if ($_POST['type'] == 'login')
     {        
