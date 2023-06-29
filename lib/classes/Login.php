@@ -1,6 +1,4 @@
 <?php
-session_start();
-require_once '../services/DataAccess.php';
 
 class Login
 {

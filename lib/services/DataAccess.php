@@ -4,14 +4,6 @@ class DataAccess
 {
     public function Login($username, $password)
     {
-        if(file_exists('../database/Database.db'))
-        {
-            echo 'aaaaaaaaa';
-        }
-        else
-        {
-            echo 'eeeeeee';
-        }
         $pdo = new PDO('sqlite:' . '../database/Database.db');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         try
@@ -25,7 +17,7 @@ class DataAccess
         }
         catch(Exception $e)
         {
-
+            die($e);
         }
     }
 }

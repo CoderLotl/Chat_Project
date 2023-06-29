@@ -1,9 +1,11 @@
 <?php
+session_start();
 require_once '../classes/Login.php';
 
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 if ($requestMethod == 'POST')
 {
+    require_once '../services/DataAccess.php';
     $login = new Login();
     if ($_POST['type'] == 'login')
     {        
