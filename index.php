@@ -24,7 +24,7 @@
     </div>
     <div id="chat">
         <?php
-            require './lib/scripts/managers/mng.chat.php';
+            require './lib/scripts/actions/action.chat.php';
         ?>
     </div>
 </body>
