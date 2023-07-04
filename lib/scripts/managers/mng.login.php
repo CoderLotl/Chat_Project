@@ -14,7 +14,7 @@ if ($requestMethod === 'POST')
     }
     elseif ($_POST['type'] == 'logout')
     {
-        $login->LogOut();
+        $login->LogOut($_POST['userName']);
         session_unset();
         session_destroy();
         

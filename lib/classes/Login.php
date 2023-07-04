@@ -7,7 +7,8 @@ class Login
         $dataAccess = new DataAccess();        
 
         if($dataAccess->Login($user, $password, $path))
-        {            
+        {
+            $dataAccess->Update($user, '../../database/Database.db', 'users', 'logged', true);
             $_SESSION['username'] = $user;
             $_SESSION['loggedin'] = true;                           
         }
@@ -17,11 +18,11 @@ class Login
         }      
     }
 
-    public function LogOut()
+    public function LogOut(string $user)
     {
         $dataAccess = new DataAccess();
 
-
+        $dataAccess->Update($user, '../../database/Database.db', 'users', 'logged', false);
     }
 }
 

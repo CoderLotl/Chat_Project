@@ -15,8 +15,7 @@ class DataAccess
             $statement->execute();
 
             if($statement->fetchColumn() > 0)
-            {
-                //$this->Update($username, $path, 'users', 'logged', true);
+            {                
                 return true;
             }
             else
@@ -30,7 +29,7 @@ class DataAccess
         }
     }
 
-    private function Update($username, $path, $table, $column, $value)
+    public function Update($username, $path, $table, $column, $value)
     {
         $path = strip_tags($path);
         $pdo = new PDO('sqlite:' . $path);
@@ -53,6 +52,11 @@ class DataAccess
         {
             die($e);
         }
+    }
+
+    public function AddMessage()
+    {
+        
     }
 }
 
