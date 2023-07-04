@@ -22,5 +22,10 @@
             require './lib/scripts/actions/action.login.php';
         ?>
     </div>
+    <div id="chat">
+        <?php
+            require './lib/scripts/managers/mng.chat.php';
+        ?>
+    </div>
 </body>
 </html>
