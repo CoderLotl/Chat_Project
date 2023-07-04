@@ -2,14 +2,14 @@
 
 class Login
 {
-    public function LogIn(string $user, string $password)
+    public function LogIn(string $user, string $password, string $path)
     {        
-        $dataAccess = new DataAccess();
-        
-        if($dataAccess->Login($user, $password))
-        {
+        $dataAccess = new DataAccess();        
+
+        if($dataAccess->Login($user, $password, $path))
+        {            
             $_SESSION['username'] = $user;
-            $_SESSION['loggedin'] = true;                     
+            $_SESSION['loggedin'] = true;                           
         }
         else
         {

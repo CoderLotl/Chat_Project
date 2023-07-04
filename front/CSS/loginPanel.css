@@ -1,0 +1,11 @@
+#panelButtons
+{
+    margin-top: 10px;
+}
+
+.loginButton
+{
+    background-color: rgb(184, 24, 24);    
+    margin-top: 10px;
+    padding: 5px;
+}

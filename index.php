@@ -1,6 +1,8 @@
 <?php
     session_start();
     require 'vendor/autoload.php';
+    $smarty = new Smarty();
+    $smarty->setTemplateDir('./lib/tpl');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,8 +18,8 @@
         "Simple Chat Project"
     </header>
     <div id="userPanel">        
-        <?php                                    
-            UI::DrawLoginPanel();            
+        <?php            
+            require './lib/scripts/actions/action.login.php';
         ?>
     </div>
 </body>
