@@ -1,0 +1,9 @@
+How does this thing work? Simple:
+
+There are 2 important .php files here. One is the 'chat-server.php' which you must bring up as a service through the Command Line, and the other is the 'index.php'
+which is the heart of your server.
+
+The chat-server will then be a service that will handle messages between clients. There's an unused tables for messages in the DB that I never used because
+I never continued this project.
+
+There are 2 users: admin and pepe. The password for both are their user names. It doesn't even have a true login system, I just wanted to see the thing working.

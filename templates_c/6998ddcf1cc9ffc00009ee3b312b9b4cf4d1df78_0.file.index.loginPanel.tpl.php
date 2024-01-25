@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2023-07-04 03:30:19
-  from 'C:\xampp\htdocs\Chat_Project\lib\tpl\index.loginPanel.tpl' */
+/* Smarty version 4.3.1, created on 2023-07-11 18:55:52
+  from 'C:\xampp\htdocs\Chat_Project2\lib\tpl\index.loginPanel.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_64a3762b86a2f0_07617505',
+  'unifunc' => 'content_64ad89989af055_17498468',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'b7afea0a4298d2f1db2da8d54a8a15f61a3acdc9' => 
+    '6998ddcf1cc9ffc00009ee3b312b9b4cf4d1df78' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Chat_Project\\lib\\tpl\\index.loginPanel.tpl',
-      1 => 1688434218,
+      0 => 'C:\\xampp\\htdocs\\Chat_Project2\\lib\\tpl\\index.loginPanel.tpl',
+      1 => 1689044736,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a3762b86a2f0_07617505 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64ad89989af055_17498468 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="/front/CSS/loginPanel.css">
 <?php if ((isset($_smarty_tpl->tpl_vars['session']->value['loggedin'])) && $_smarty_tpl->tpl_vars['session']->value['loggedin'] === true) {?> 
     <form id="panel" action="lib/scripts/managers/mng.login.php" method="POST">
